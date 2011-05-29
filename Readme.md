@@ -1,6 +1,27 @@
 # busbuddyjs
 
-  BusBuddy js api
+  BusBuddy js api for node
+
+# Installation
+
+    npm install busbuddy
+
+# Usage
+
+    var busbuddy = require('busbuddy');
+    var bus = busbuddy('YOUR-API-KEY');
+    
+    bus.stops(function (stops) {
+      console.log(stops);
+    });
+        
+    bus.departures(100160, function (departures) {
+      console.log(departures);
+    });
+
+## TODO
+
+- Make it work in the browser!
 
 ## License 
 
