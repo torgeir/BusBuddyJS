@@ -52,7 +52,7 @@
 
 ### Running the integration tests
     
-  Edit your api key in the `integration-test/integration.test.js` and `integration-test/browser-test.html`
+  Edit your api key in the `integration-test/integration.test.js` and `integration-test/browser.test.html`
 
     $ make integration-test
 
