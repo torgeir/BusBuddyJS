@@ -4,7 +4,7 @@
 
 # Installation
 
-    npm install busbuddy
+    $ npm install busbuddy
 
 # Usage
 
@@ -22,6 +22,16 @@
 ## TODO
 
 - Make it work in the browser!
+
+## Run tests
+
+    $ make test
+
+## Run integration tests
+    
+Edit your api key in the `integration-test/integration.test.js`
+
+    $ make integration-test
 
 ## License 
 
