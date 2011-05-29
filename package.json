@@ -1,7 +1,7 @@
 {
     "name": "busbuddy"
-  , "version": "0.0.1"
-  , "description": "BusBuddy js api for node"
+  , "version": "0.0.2"
+  , "description": "BusBuddy js api for node and the browser"
   , "keywords": ["busbuddy", "buss", "trondheim", "atb", "api"]
   , "author": "Torgeir Thoresen <@torgeir>" 
   , "dependencies": {}

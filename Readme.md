@@ -1,37 +1,66 @@
 # BusBuddyJS
 
-  BusBuddy js api for node
+  BusBuddy JavaScript API 
 
-# Installation
+## Usage
+
+  BusBuddyJS works both in node and in the brower!
+
+### Node
+
+  Install with npm
 
     $ npm install busbuddy
 
-# Usage
+  Then in your code, do something like
 
     var busbuddy = require('busbuddy');
     var bus = busbuddy('YOUR-API-KEY');
-    
     bus.stops(function (stops) {
       console.log(stops);
     });
-        
     bus.departures(100852, function (departures) {
       console.log(departures);
     });
 
-## TODO
+### In-browser
 
-- Make it work in the browser!
+  In-browser usage is identical to the node-way, except for how you include the busbuddy script
 
-## Run tests
+    <script src="lib/busbuddy.js"></script>
+    <script>
+    (function () {
+      var bus = busbuddy('YOUR-API-KEY');
+      bus.stops(function (stops) {
+        console.log(stops);
+      });
+      bus.departures(100852, function (departures) {
+        console.log(departures)
+      });
+    })();
+    </script>
+
+## Tests
+
+  The tests are run with node, and you need `expresso`. It's available on npm
+
+    $ npm install expresso
+
+### Running the tests
 
     $ make test
 
-## Run integration tests
+### Running the integration tests
     
-Edit your api key in the `integration-test/integration.test.js`
+  Edit your api key in the `integration-test/integration.test.js` and `integration-test/browser-test.html`
 
     $ make integration-test
+
+## Todo
+
+- [v] Make it work in the browser!
+
+## Enjoy! :)
 
 ## License 
 

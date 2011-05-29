@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>BusBuddyJS browser test</title>
+    <style>
+      section {
+	background-color: red;
+	padding: 20pt;
+      }
+      .green {
+	background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>bus.stop()</section>
+    <section>bus.departures()</section>
+  </body>
+  <script src="../lib/busbuddy.js"></script>
+  <script charset="utf-8">
+    (function () {
+      var sections = document.getElementsByTagName('section');
+      var key = 'CHANGE-THIS-WITH-YOUR-API-KEY';
+      var bus = busbuddy(key);
+
+      if (key === 'CHANGE-THIS-WITH-YOUR-API-KEY') {
+	alert('Change your api key in integration-test/browser.test.html');
+      }
+
+      bus.stops(function (json) {
+	json.busStops.length && (sections[0].className = 'green')
+      });
+
+      bus.departures(100852, function (json) {
+	json.departures.length && (sections[1].className = 'green')
+      });
+
+    })();
+  </script>
+</html>
+
