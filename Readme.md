@@ -1,4 +1,3 @@
-
 # busbuddyjs
 
   BusBuddy js api
@@ -7,7 +6,7 @@
 
 (The MIT License)
 
-Copyright (c) 2011 Torgeir Thoresen <@torgeir> &lt;<@torgeir>&gt;
+Copyright (c) 2011 Torgeir Thoresen <@torgeir>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
