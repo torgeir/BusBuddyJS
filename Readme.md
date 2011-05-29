@@ -1,4 +1,4 @@
-# busbuddyjs
+# BusBuddyJS
 
   BusBuddy js api for node
 
